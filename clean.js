@@ -9,7 +9,12 @@ var dirty_clothes = [
 /* YOUR CODE HERE */
 function clean(clothing_item){
     // return clean_clothing_item;
+    var splitClothing = clothing_item.split("*").join("");
+    return splitClothing;
 }
+
+
+var cleanClothes = dirty_clothes.map(clean);
 
 
 /* PRINT RESULT */

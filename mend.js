@@ -6,9 +6,14 @@ var torn_clothes = [
 ];
 
 /* YOUR CODE HERE */
+
 function mend(clothing_item){
-    // return mended_clothing_item;
+  var splitClothing = clothing_item.split("/");
+  return ((splitClothing[0] + splitClothing[1]));
 }
+
+var mendingLoad = torn_clothes.map(mend);
+
 
 
 /* PRINT RESULT */
